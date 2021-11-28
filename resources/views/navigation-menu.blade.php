@@ -13,7 +13,31 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Inicio') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('materias.index') }}" :active="request()->routeIs('materias.*')">
+                        {{ __('Materias') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('estudiantes.index') }}" :active="request()->routeIs('estudiantes.*')">
+                        {{ __('Estudiantes') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('profesors.index') }}" :active="request()->routeIs('profesors.*')">
+                        {{ __('Profesores') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('asistencias.index') }}" :active="request()->routeIs('asistencias.*')">
+                        {{ __('Asistencias') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('temas.index') }}" :active="request()->routeIs('temas.*')">
+                        {{ __('Temas') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('preguntas.index') }}" :active="request()->routeIs('preguntas.*')">
+                        {{ __('Preguntas') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('evaluacions.index') }}" :active="request()->routeIs('evaluacions.*')">
+                        {{ __('Evaluaciones') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('detalleevaluacions.index') }}" :active="request()->routeIs('detalleevaluacions.*')">
+                        {{ __('Detalle de Evaluaciones') }}
                     </x-jet-nav-link>
                 </div>
             </div>
