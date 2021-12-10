@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use App\Model\Asistencia;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -19,7 +19,8 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
     use HasRoles;
-
+    public function asistencia(){
+        return $this->hasMany(Asistencia::class);} 
     /**
      * The attributes that are mass assignable.
      *
