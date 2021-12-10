@@ -3,6 +3,7 @@
 namespace App\Models;
 use App\Model\Materia;
 use App\Model\Pregunta;
+use App\Model\Detalle_evaluacion;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,5 +15,10 @@ class Tema extends Model
     
     public function pregunta(){
         return $this->hasMany(Pregunta::class);} 
+    
+public function detalle_evaluacion(){
+        return $this->hasMany(Detalle_evaluacion::class);} 
+
+    
 
 }
