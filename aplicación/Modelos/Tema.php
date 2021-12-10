@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tema extends Model
 {
-    use HasFactory
+    use HasFactory;
         public function materia(){
         return $this->belongsTo(Materia::class);} 
 }
